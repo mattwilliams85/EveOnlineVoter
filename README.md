@@ -1,1 +1,2 @@
-Project to brush up on REACT / LESS and a few other things
+Eve Online voting app using React, Node.js, MongoDB and Socket.IO.
+
