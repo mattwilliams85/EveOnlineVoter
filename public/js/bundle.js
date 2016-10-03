@@ -1049,7 +1049,7 @@ var Footer = function (_React$Component) {
                 _react2.default.createElement(
                   'strong',
                   null,
-                  'Copyright'
+                  'Source'
                 )
               ),
               _react2.default.createElement(

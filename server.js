@@ -44,6 +44,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/api/characters', function(req, res, next) {
   var choices = ['Female', 'Male'];
   var randomGender = _.sample(choices);
+  Character.ensureIndex({point:"2dsphere"});
 
   Character.find({ random: { $near: [Math.random(), 0] } })
     .where('voted', false)
