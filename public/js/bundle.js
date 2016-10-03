@@ -1081,15 +1081,10 @@ var Footer = function (_React$Component) {
                 'You may view the ',
                 _react2.default.createElement(
                   'a',
-                  { href: 'https://github.com/sahat/newedenfaces-react' },
+                  { href: 'https://github.com/mattwilliams85/EveOnlineVoter' },
                   'Source Code'
                 ),
                 ' behind this project on GitHub.'
-              ),
-              _react2.default.createElement(
-                'p',
-                null,
-                '\xA9 2015 Sahat Yalkabov.'
               )
             ),
             _react2.default.createElement(
