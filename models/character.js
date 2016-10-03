@@ -9,7 +9,7 @@ var characterSchema = new mongoose.Schema({
   wins: { type: Number, default: 0 },
   losses: { type: Number, default: 0 },
   reports: { type: Number, default: 0 },
-  random: { type: [Number], index: '2d' },
+  random: { type: [Number], index: '2dsphere' },
   voted: { type: Boolean, default: false }
 });
 
