@@ -46,7 +46,12 @@ app.get('/api/characters', function(req, res, next) {
   var randomGender = _.sample(choices);
   Character.ensureIndex({point:"2dsphere"});
 
-  Character.find({ random: { $near: [Math.random(), 0] } })
+  Character.find({ 
+    random: { 
+      $near: { 
+        $geometry: { type: 'Point', coordinates: [Math.random(), 0] } 
+      }
+    } })
     .where('voted', false)
     .where('gender', randomGender)
     .limit(2)
